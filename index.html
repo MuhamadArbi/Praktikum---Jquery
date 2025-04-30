@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erbay Portfolio</title>
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to Your CSS File -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Hamburger Menu Button (Visible on Mobile) -->
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+    </button>
+
+    <nav id="main-nav">
+        <!-- Close Menu Button (Inside Nav, Visible when Sidebar is Open on Mobile) -->
+        <button class="close-menu" id="close-menu" aria-label="Close Menu">
+            <i class="fas fa-times"></i> <!-- Close Icon -->
+        </button>
+        <ul>
+            <!-- Add class="active" to the currently active page -->
+            <li><a href="#" class="active">Homepage</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <h2>
+                <span>I’m</span><br>
+                ERBAY
+            </h2>
+            <div class="yellow-line"></div>
+            <p>
+                Seorang freelancer yang menyediakan layanan untuk Fotografer dan Videografer pernikahan,
+                untuk semua bisnis dengan pengalaman lebih dari 2 tahun
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="img/Profil.png" alt="Foto Erbay">
+        </div>
+        <div class="hero-right">
+            <h3>About me</h3>
+            <p>
+                Seorang fotografer dan videografer yang berkomitmen untuk menangkap
+                momen-momen istimewa melalui lensa saya
+            </p>
+        </div>
+    </section>
+
+    <!-- Profile Banner -->
+    <section class="profile-banner">
+        <h2>MY PROFILE</h2>
+    </section>
+
+    <!-- Bagian Testimoni dan Deskripsi Layanan -->
+    <section class="testimoni">
+        <article>
+            <h3>Photografi</h3>
+            <p>
+                Bekerja dengan Erbay adalah pengalaman yang luar biasa! Hasil
+                jepretannya tidak hanya menakjubkan, tetapi juga mampu menangkap
+                momen-momen berharga dengan sangat detail.
+            </p>
+            <p><strong>From Ardhi Pt. EkaJaya bsm</strong></p>
+            <div class="rating">Rate 5.0 <span class="star">★</span></div>
+        </article>
+        <article>
+            <h3>Videografi</h3>
+            <p>
+                Hasil video yang dibuat oleh Erbay benar-benar melampaui ekspektasi
+                kami! Kualitas gambar, penyuntingan, dan kreativitasnya sangat
+                memukau.
+            </p>
+            <p><strong>From Naufal CV. Kreatif Media Indonesia</strong></p>
+            <div class="rating">Rate 4.9 <span class="star">★</span></div>
+        </article>
+        <article>
+            <h3>Programs</h3>
+            <p>
+                Program paket foto dan video yang sangat bagus dengan harga
+                terjangkau.
+            </p>
+            <p><strong>From Adrian CV. Mega Media Indonesia</strong></p>
+            <div class="rating">Rate 4.9 <span class="star">★</span></div>
+        </article>
+    </section>
+
+    <!-- Bagian Tools -->
+    <section class="tools">
+        <h2>Tools yang Dikuasai</h2>
+        <p>Berikut adalah beberapa software yang sering saya gunakan:</p>
+        <ul>
+            <li>
+                <img src="img/Potoshop.png" alt="Photoshop Logo" />
+                <span>Adobe Photoshop</span>
+            </li>
+            <li>
+                <img src="img/Premiere.png" alt="Premiere Logo" />
+                <span>Adobe Premiere</span>
+            </li>
+            <li>
+                <img src="img/Lightroom.png" alt="Lightroom Logo" />
+                <span>Adobe Lightroom</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Bagian Mengapa Memilih Saya -->
+    <section class="why-me">
+        <div class="why-me-text">
+            <h2>Why me?</h2>
+            <p>
+                Dengan pengalaman bertahun-tahun dalam dunia fotografi dan videografi,
+                saya mengedepankan kreativitas dan perhatian pada detail untuk
+                menangkap momen-momen unik yang mewakili cerita serta kepribadian
+                Anda.
+            </p>
+            <p>
+                Pendekatan personal saya memastikan setiap karya tidak hanya estetik,
+                tetapi juga penuh emosi dan makna. Memilih saya berarti Anda
+                berkolaborasi dengan seorang profesional yang berkomitmen memberikan
+                hasil berkualitas tinggi dan inovatif, yang selalu berusaha melampaui
+                ekspektasi setiap klien.
+            </p>
+        </div>
+        <div class="projects">
+            <article>
+                <img src="img/Fotografer.jpg" alt="Fotografer" />
+                <div class="project-info">
+                    <h3>Photografi</h3>
+                    <p>30 Project</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+            <article>
+                <img src="img/Videograph.jpg" alt="Videografer" />
+                <div class="project-info">
+                    <h3>Videografi</h3>
+                    <p>15 Project</p>
+                </div>
+                <span class="arrow">→</span>
+            </article>
+        </div>
+    </section>
+
+     <!-- ========== Contact Form Section ========== -->
+     <section class="contact-form-section" id="contact">
+        <h2>Kontak Saya</h2>
+        <p>Punya pertanyaan atau ingin bekerja sama? Silakan isi formulir di bawah ini.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="nama" name="nama" required maxlength="50">
+                <div class="error-message" id="nama-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required maxlength="100">
+                <div class="error-message" id="email-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="telepon">Nomor Handphone <span class="required">*</span></label>
+                <input type="tel" id="telepon" name="telepon" required maxlength="15">
+                <div class="error-message" id="telepon-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan <span class="required">*</span></label>
+                <textarea id="pesan" name="pesan" rows="5" required maxlength="500"></textarea>
+                <div class="error-message" id="pesan-error"></div>
+            </div>
+
+            <button type="submit" class="submit-button">Kirim Pesan</button>
+            <div id="form-status" style="margin-top: 15px;"></div> <!-- General form status message -->
+        </form>
+    </section>
+    <!-- ========== End Contact Form Section ========== -->
+
+    <!-- Bagian Footer -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>Ar.Project</h4>
+            <p>
+                They are very gentle and leave no pain. He wanted to see the results
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Link</h4>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Testimoni</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Contact</h4>
+            <p>1456, Jl.MitraBatik, Kota Tasikmalaya Jawa Barat</p>
+            <p><a href="mailto:muhamadarbinwt@gmail.com">muhamadarbinwt@gmail.com</a></p>
+            <p>+62 83893314676</p>
+        </div>
+    </footer>
+
+    <!-- Link to Your JavaScript File -->
+    <script src="js/script.js"></script>
+    <!-- Letakkan sebelum tag </body> penutup -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+</html>

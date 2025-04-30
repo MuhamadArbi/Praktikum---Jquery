@@ -1,0 +1,672 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Pengaturan font dan warna background utama */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #2c2c2c; Warna abu gelap */
+  color: #dadada;
+  line-height: 1.5;
+}
+
+/* Navigasi */
+nav {
+  /* Bagian ini mengatur jarak atas-bawah dan kiri-kanan */
+  padding: 0 100px; 
+  /* Jika ingin posisi menu di kanan, kita bisa pakai flex di sini */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+
+/* Menghilangkan bullet dan menata menu secara horizontal */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Latar belakang strip hitam di area menu */
+}
+
+/* Style link */
+nav ul li a {
+  display: block; /* Supaya padding klik bisa penuh */
+  text-decoration: none;
+  color: #ffd700; /* Warna emas */
+  padding: 15px 20px; 
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover: ubah warna latar link saat disorot */
+nav ul li a:hover {
+  background-color: #1c1c1c;
+}
+
+/* Active: menu yang sedang “terpilih” */
+nav ul li a.active {
+  background-color: #1c1c1c; /* Latar sedikit lebih terang/gelap */
+}
+
+/* Reset margin & padding dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Warna latar belakang utama dan font dasar */
+body {
+  background-color: #3a3a3a; /* abu-abu gelap */
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+/* Hero wrapper */
+.hero {
+  display: flex;
+  align-items: flex-end;   /* bagian bawah kolom sejajar */
+  justify-content: center; /* menempatkan ketiga kolom di tengah secara horizontal */
+  max-width: 1200px;       /* batas lebar hero */
+  margin: 0 auto;          /* agar hero berada di tengah layar */
+  padding: 40px 20px;      /* ruang dalam hero */
+  background-color: #3a3a3a;
+}
+
+/* Kolom kiri */
+.hero-left {
+  /* Tetapkan lebar agar teks tidak melar */
+  width: 300px;
+  margin-right: 20px;
+  align-self: flex-start; /* Supaya teks menempel di atas */
+}
+.hero-left h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.hero-left h2 span {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+.yellow-line {
+  width: 60%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 15px 0 20px;
+}
+.hero-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Foto profil (kolom tengah) */
+.hero-image {
+  flex: 0 0 auto; /* ukuran menyesuaikan gambar, tidak melebar */
+  margin: 0 20px; /* jarak kiri-kanan */
+}
+.hero-image img {
+  width: 450px;     /* perbesar gambar sesuai kebutuhan */
+  height: auto;
+  display: block;
+  margin-bottom: -40px; /* dorong ke bawah agar menempel banner */
+}
+
+/* Kolom kanan */
+.hero-right {
+  width: 300px;
+  margin-left: 20px;
+  align-self: flex-start; /* teks di atas */
+  margin-top: 60px;       /* tambahkan margin-top agar bergeser ke bawah */
+}
+.hero-right h3 {
+  color: #ffd700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.hero-right p {
+  line-height: 1.6;
+}
+
+/* Banner MY PROFILE */
+.profile-banner {
+  background-color: #2c2c2c;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: -40px; /* naik agar menempel dengan foto */
+}
+.profile-banner h2 {
+  font-size: 2rem;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Responsif: layar sempit */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left, .hero-right {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    text-align: center;
+    align-self: center;
+  }
+  .hero-image {
+    margin: 20px 0;
+  }
+  .hero-image img {
+    margin-bottom: -20px; /* kurangi negatif margin agar tak terlalu menjorok */
+  }
+  .profile-banner {
+    margin-top: -20px;
+  }
+}
+
+
+
+/* Bagian Testimoni dan Deskripsi Layanan */
+section.testimoni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px 40px;
+  justify-content: center;
+  background-color: #2c2c2c;
+  /* Anda bisa atur background section di sini jika mau
+     misalnya:  */
+}
+
+section.testimoni article {
+  background-color: #3a3a3a; /* warna abu-abu gelap */
+  flex: 1 1 250px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff; /* teks putih */
+}
+
+/* Judul di dalam card */
+section.testimoni article h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffd700; /* emas */
+}
+
+/* Spasi paragraf dalam card */
+section.testimoni article p {
+  margin-bottom: 10px;
+}
+
+/* Kotak kecil untuk rating */
+section.testimoni article .rating {
+  display: inline-block;
+  background-color: #1c1c1c;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Bintang emas di dalam rating */
+section.testimoni article .rating .star {
+  color: #ffd700;
+  margin-left: 5px;
+}
+
+
+/* Bagian Tools */
+section.tools {
+  background-color: #3a3a3a; /* abu-abu gelap atau sesuai keinginan */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Judul dan paragraf penjelasan */
+section.tools h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+section.tools p {
+  margin-bottom: 30px; /* jarak di bawah paragraf sebelum list */
+  color: #dddddd;
+}
+
+/* Daftar tools */
+section.tools ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* jarak horizontal antar item */
+  margin: 0;
+  padding: 0;
+}
+
+/* Setiap item tool */
+section.tools ul li {
+  display: flex;
+  flex-direction: column; /* gambar di atas teks */
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Gambar tool */
+section.tools ul li img {
+  width: 80px;              /* ukuran ikon */
+  height: 80px;             /* jika ingin kotak 1:1 */
+  border-radius: 20%;       /* sudut agak melengkung */
+  margin-bottom: 10px;      /* jarak ke teks */
+  transition: transform 0.3s;
+  object-fit: cover;        /* menjaga rasio gambar jika berbeda */
+}
+
+/* Efek hover pada ikon */
+section.tools ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Teks nama tool */
+section.tools ul li span {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+
+/* Bagian Why Me */
+.why-me {
+  display: flex;                 /* 2 kolom: teks kiri, project kanan */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;                     /* jarak horizontal antara kolom */
+  padding: 40px 60px;            /* jarak dalam section */
+  color: #ffffff;                /* teks putih di atas latar gelap */
+  background-color: #2c2c2c;     /* latar belakang gelap (opsional) */
+}
+
+.why-me-text {
+  flex: 1;                       /* kolom kiri lebih fleksibel */
+  max-width: 600px;             /* batas lebar kolom teks */
+}
+
+.why-me-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.why-me-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Kolom kanan untuk project */
+.projects {
+  display: flex;
+  flex-direction: column;        /* tumpuk 2 card secara vertikal */
+  gap: 20px;
+}
+
+/* Masing-masing card project */
+.projects article {
+  display: flex;
+  align-items: center;           /* gambar, teks, dan panah sejajar secara vertikal */
+  gap: 20px;
+  background-color: #3a3a3a;     /* latar card */
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+/* Gambar dalam card */
+.projects article img {
+  width: 120px;
+  height: 80px;                  /* contoh proporsi, silakan disesuaikan */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Teks judul project (Photografi/Videografi) */
+.projects article h3 {
+  color: #ffd700;                /* emas */
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+/* Teks jumlah project */
+.projects article p {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Panah di ujung kanan card */
+.arrow {
+  margin-left: auto;             /* dorong panah ke paling kanan */
+  font-size: 1.5rem;
+  color: #ffd700;                /* emas */
+}
+
+
+/* ---------------------
+   Footer
+   --------------------- */
+   .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;  /* latar belakang gelap */
+    padding: 40px 60px;         /* jarak dalam footer */
+    color: #ffffff;
+    gap: 20px;
+  }
+  
+  /* Kolom dalam footer */
+  .footer-col {
+    flex: 1 1 200px;            /* agar minimal 200px, lalu melar sesuai ruang */
+    margin: 10px 0;
+  }
+  
+  /* Judul kolom (Ar.Project, Link, dsb) */
+  .footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000000;  /* warna teks judul (diganti agar sesuai gambar, misalnya hitam) */
+    font-weight: 700;
+  }
+  
+  /* Jika di gambar latar kolom footer tampak abu-abu, tambahkan background */
+  .footer-col {
+    background-color: #cccccc;  /* contoh abu-abu terang */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Teks paragraf dalam kolom footer */
+  .footer-col p {
+    margin-bottom: 10px;
+    color: #000000; /* teks paragraf hitam, menyesuaikan background abu-abu */
+    line-height: 1.4;
+  }
+  
+  /* Daftar link di kolom Link */
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col ul li a {
+    color: #000000;       /* link warna hitam */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  /* Hover link: warna berganti, misal ke #333333 */
+  .footer-col ul li a:hover {
+    color: #333333;
+  }
+  
+  /* Bagian media sosial (ikon) */
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Font Awesome icon style (jika dipakai) */
+  .footer-social a {
+    color: #000000;       /* warna ikon */
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: #333333;
+  }
+  
+  /* Responsif: jika layar sempit, kolom ditumpuk */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
+  
+ /* Add Mobile Specific CSS Here (or move to styles.css) */
+
+      /* Hamburger Button Styling */
+      .hamburger-menu {
+        display: none; /* Hidden by default on desktop */
+        position: fixed; /* Or absolute relative to header */
+        top: 15px;
+        right: 20px;
+        z-index: 1001; /* Ensure it's above the nav */
+        background: none;
+        border: none;
+        font-size: 2rem; /* Adjust size */
+        color: #333; /* Adjust color */
+        cursor: pointer;
+      }
+
+      /* Sidebar Navigation Styling */
+      @media (max-width: 768px) { /* Adjust breakpoint as needed */
+        .hamburger-menu {
+          display: block; /* Show hamburger on mobile */
+        }
+
+        nav {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 250px; /* Adjust width */
+          background-color: #222; /* Dark background for sidebar */
+          z-index: 1000;
+          transform: translateX(100%); /* Hide sidebar off-screen */
+          transition: transform 0.3s ease-in-out;
+          padding-top: 60px; /* Space for close button */
+          box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        }
+
+        nav.active {
+          transform: translateX(0); /* Slide sidebar in */
+        }
+
+        nav ul {
+          flex-direction: column; /* Stack links vertically */
+          align-items: flex-start; /* Align links to the left */
+          padding: 20px;
+          margin-top: 20px; /* Add some space from the top/close button */
+        }
+
+        nav ul li {
+          width: 100%; /* Make list items take full width */
+          margin-bottom: 15px; /* Space between links */
+        }
+
+        nav ul li a {
+          color: #fff; /* White text for links */
+          padding: 10px 15px;
+          display: block; /* Make links block-level */
+          width: 100%;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.2s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+          background-color: #c19a6b; /* Highlight color on hover/active */
+          color: #222; /* Dark text on highlight */
+        }
+
+        /* Close Button Styling */
+        .close-menu {
+            display: block; /* Show close button inside nav */
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 2rem; /* Adjust size */
+            color: #fff; /* White color */
+            cursor: pointer;
+        }
+      }
+
+      /* Hide close button by default (it's only shown within the media query) */
+      .close-menu {
+          display: none;
+      }
+
+      /* Optional: Dim background when sidebar is open */
+      body.sidebar-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999; /* Below sidebar, above content */
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      body::before {
+        /* Default state - hidden */
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none; /* Prevent interaction when hidden */
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      /* ===== Contact Form Section ===== */
+.contact-form-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 32px;
+}
+
+.contact-form-section p {
+  margin-bottom: 30px;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group label .required {
+  color: #e74c3c; /* Red asterisk */
+  margin-left: 2px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c19a5c; /* Gold focus */
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Input error styling */
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: #e74c3c; /* Red border for error */
+  background-color: #fbecea;
+}
+
+.error-message {
+  color: #e74c3c; /* Red error text */
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none; /* Hidden by default */
+}
+
+.submit-button {
+  background-color: #c19a5c; /* Gold button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #a7844a; /* Darker gold on hover */
+}
+
+#form-status {
+  font-weight: bold;
+  text-align: center;
+}
+#form-status.success {
+  color: #2ecc71; /* Green for success */
+}
+#form-status.error {
+  color: #e74c3c; /* Red for error */
+}
